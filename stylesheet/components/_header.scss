@@ -1,0 +1,10 @@
+.header{
+    height: 545px;
+    background-size: cover; // 完整顯示圖片
+    background-position: bottom center; //繞圖片從中下方開始顯示
+}
+@include media-breakpoint-up(lg){
+    .header{
+        height: 627px;
+    }
+}

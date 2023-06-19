@@ -12031,4 +12031,15 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.header {
+  height: 545px;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+@media (min-width: 992px) {
+  .header {
+    height: 627px;
+  }
 }/*# sourceMappingURL=all.css.map */
