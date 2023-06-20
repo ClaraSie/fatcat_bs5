@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- custom -->
+    <link rel="stylesheet" href="stylesheet/all.css">
+    <title>小肥貓</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white align-item-center py-3">
+        <div class="container text-center">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-record-fill text-info"></i>
+                <span class="fs-4 fw-bold text-black"> 小肥貓</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" aria-current="page" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="index.html#intro">服務介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 active" href="payment.html">方案費用</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#">常見問題</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-info mx-3 mt-2 mt-lg-0" href="payment.html">方案費用</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header style="background-image: url(./images/bg_paper.png)">
+        <div class="container py-5 text-center">
+            <div class="fs-5 text-info fw-bold mb-2">HAPPY LIFE</div>
+            <h1 class="fw-bold fs-2 mb-0">開始當個小肥貓</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="" class="p-lg-5 shadow-lg">
+                        <h3 class="deco-line mb-3 fw-bold">選擇方案</h3>
+                        <div class="row row-cols-1 row-cols-lg-3 g-1 mb-4">
+                            <div class="col">
+                                <button type="button" class="btn btn-outline-info w-100 btn-lg text-dark py-3 fw-bold fs-6">
+                                    小小搭肥貓<br class="d-none d-lg-block">
+                                    NT 298/月
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-outline-info w-100 btn-lg text-dark py-3 fw-bold fs-6">
+                                    睡一整天囉<br class="d-none d-lg-block">
+                                    NT 666/月
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-info w-100 btn-lg text-white py-3 fw-bold fs-6 btn-special active">
+                                    客製化方案<br class="d-none d-lg-block">
+                                    客服詢價
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="deco-line mb-3 fw-bold">填寫資料</h3>
+                        <div class="mb-3">
+                            <div class="row row-cols-1 row-cols-lg-2 gx-1 gy-3">
+                                <div class="col">
+                                    <label for="secondName" class="form-label">名字</label>
+                                    <input type="text" class="form-control" id="secondName" required>
+                                </div>
+                                <div class="col">
+                                    <label for="firstName" class="form-label">姓氏</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">手機號碼</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">電子郵件</label>
+                            <input type="mail" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">住址</label>
+                            <input type="text" class="form-control" id="address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactTime" class="form-label">方便聯繫時間</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>請選擇聯繫時間</option>
+                                <option value="1" selected>08:00-12:00</option>
+                                <option value="2">13:00-17:00</option>
+                                <option value="3">17:00-20:00</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address1" class="form-label">住址</label>
+                            <input type="text" class="form-control" id="address1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="moreService" class="form-label">加購服務</label>
+                            <div class="row px-3">
+                                <div class="form-check col-auto">
+                                    <input class="form-check-input" type="checkbox" value="" id="service1">
+                                    <label class="form-check-label" for="service1">
+                                        每週一清掃家裡+100
+                                    </label>
+                                </div>
+                                <div class="form-check col-auto">
+                                    <input class="form-check-input" type="checkbox" value="" id="service2">
+                                    <label class="form-check-label" for="service2">
+                                        按摩+50
+                                    </label>
+                                </div>
+                                <div class="form-check col-auto">
+                                    <input class="form-check-input" type="checkbox" value="" id="service3">
+                                    <label class="form-check-label" for="service3">
+                                        聽你說話+150
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="remark" class="form-label">備註說明</label>
+                            <textarea class="form-control" id="remark" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info w-100 fs-5">選擇方案</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">需要其他協助嗎？</h2>
+            <div class="row row-cols-1 row-cols-lg-3 justify-content-center g-4">
+                <div class="col-9 col-lg-3">
+                    <div class="card shadow border-0">
+                        <div class="card-body text-center fs-4 py-4">
+                            <i class="bi bi-telephone-fill text-info"></i> 07-555-666
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-lg-3">
+                    <div class="card shadow border-0">
+                        <div class="card-body text-center fs-4 py-4">
+                            <i class="bi bi-facebook text-info"></i> 我就是個小肥貓
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-lg-3">
+                    <div class="card shadow border-0">
+                        <div class="card-body text-center fs-4 py-4">
+                            <i class="bi bi-question-lg text-info"></i> 常見問題
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-3 bg-secondary">
+        <div class="container text-center text-white lh-lg fs-7">
+            Copyright © 2021 小懶蟲.All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
